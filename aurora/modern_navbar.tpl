@@ -1,5 +1,5 @@
 {assign var="navbarexcludeexploded" value="/"|@explode:$NAVBAREXCLUDE}
-<div style="background-image:url('{$BANNER_IMAGE}'); padding-bottom: 65px; margin-top:0px!important; border-bottom-left-radius: 85% 20%; border-bottom-right-radius: 85% 20%;">
+<div style="background-image:url('{$BANNER_IMAGE}'); background-size: cover; background-position: center; padding-bottom: 65px; margin-top:0 !important; border-bottom-left-radius: 85% 20%; border-bottom-right-radius: 85% 20%; position: relative;">
 <div class="ui secondary small menu" id="navbar" style="background: transparent !important;">
     <a class="toc item">
         <i class="sidebar icon navbar-item" style="color:white;"></i>
