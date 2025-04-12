@@ -174,7 +174,7 @@ $smarty->assign([
 
     // Portal
         'PORTAL_INFO' => AuroraUtil::getLanguage('portal', 'portal_info', [
-           'piLinkStart' => '<a href=\'https://cxstudios.in/wiki/portal\' target=\'_blank\'>',
+           'piLinkStart' => '<a href=\'https://wiki.devnex.pro/aurora-namelessmc\' target=\'_blank\'>',
            'piLinkEnd' => '</a>'
         ]),
         'PORTAL_NOT_SET' => AuroraUtil::getLanguage('portal', 'portal_not_set'),

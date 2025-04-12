@@ -1,6 +1,6 @@
 <!-- Home Page -->
 <div class="card mb-3">
-    <h3 class="card-header mb-3 text-center">Aurora Theme <span class="badge bg-primary easter-egg-trigger" data-toggle="modal" data-target="#easterEggModal" style="color:white;cursor:help;">v{$currentVersion}</span></h3>
+    <h3 class="card-header mb-3 text-center">Aurora Theme <span class="badge bg-primary aurora-trigger" data-toggle="modal" data-target="#auroraModal" style="color:white;cursor:help;">v{$currentVersion}</span></h3>
     <div class="card-body">
         <form action="" method="POST">
             <input type="hidden" name="sel_btn_session" value="home" />
@@ -36,7 +36,7 @@
       <div class="card-body">
         <h5 class="card-title">{$REQUIRE_SUPPORT}</h5>
         <p class="card-text">{$REQUIRE_SUPPORT_DESC}</p>
-        <a href="https://cxstudios.in/discord" class="btn btn-primary">{$JOIN_DISCORD}</a>
+        <a href="https://discord.gg/devnex" class="btn btn-primary">{$JOIN_DISCORD}</a>
       </div>
     </div>
   </div>
@@ -53,28 +53,26 @@
         </form>
     </div>
 </div>
-<div class="modal fade" id="easterEggModal" tabindex="-1" role="dialog" aria-labelledby="easterEggModalLabel" aria-hidden="true">
+<div class="modal fade" id="auroraModal" tabindex="-1" role="dialog" aria-labelledby="AuroraModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="easterEggModalLabel">Hey there!!</h5>
+        <h5 class="modal-title" id="AuroraModalLabel">Thank you for choosing Aurora</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
-        "Code is like humor. When you have to explain it, it's bad." 
-         <br><small>- Cory House</small>
-       <br><img src="https://cxstudios.in/cdn/lmfao/codeisfun.gif" alt="Looks like this gif wasn't loaded lmfao." class="img-fluid">
+        You're currently running Aurora v{$currentVersion} by DevNex.
       </div>
     </div>
   </div>
 </div>
 <script>
 $(document).ready(function () {
-  $('.easter-egg-trigger').click(function () {
+  $('.aurora-trigger').click(function () {
     // Show the modal
-    $('#easterEggModal').modal('show');
+    $('#auroraModal').modal('show');
   });
 });
 </script>

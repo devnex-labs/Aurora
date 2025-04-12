@@ -79,8 +79,8 @@
      <div class="center aligned">
         <span class="item">&copy; <strong>{$SITE_NAME}</strong> {'Y'|date}</span>
 		{* THIS LINE SHOULD NOT BE REMOVED, THIS IS THE ATTRIBUTION TO THE TEMPLATE DEVELOPER AND CONTRIBUTORS *}
-		<a href="https://cxstudios.in/aurora" style="float: right; margin-left: 10px;">
-          <img src="https://cxstudios.in/uploads/cx.png" alt="cxSTUDIOS" style="filter: grayscale(100%); width: 50px; height: auto;">
+		<a href="https://devnex.pro/downloads/aurora" style="float: right; margin-left: 10px;">
+          <img src="https://devnex.pro/_cdn/icon.svg" alt="DevNex" style="filter: grayscale(100%); width: 50px; height: auto;">
         </a>
     </div>
      <div class="center aligned">
@@ -102,8 +102,8 @@
      <div class="center aligned">
         <span class="item">&copy; <strong>{$SITE_NAME}</strong> {'Y'|date}</span>
 		{* THIS LINE SHOULD NOT BE REMOVED, THIS IS THE ATTRIBUTION TO THE TEMPLATE DEVELOPER AND CONTRIBUTORS *}
-		<a href="https://cxstudios.in/aurora" style="float: right; margin-left: 10px;">
-          <img src="https://cxstudios.in/uploads/cx.png" alt="cxSTUDIOS" style="filter: grayscale(100%); width: 50px; height: auto;">
+		<a href="https://devnex.pro/downloads/aurora" style="float: right; margin-left: 10px;">
+          <img src="https://devnex.pro/_cdn/icon.svg" alt="DevNex" style="filter: grayscale(100%); width: 50px; height: auto;">
         </a>
      </div>
      <div class="center aligned">

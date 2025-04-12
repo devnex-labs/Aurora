@@ -1,7 +1,7 @@
 <?php
 /*
  * Aurora Template
- * github.com/bijju089/aurora-theme
+ * github.com/devnex-labs/Aurora
  * LICENSE: MIT
  */
 
@@ -103,21 +103,21 @@ class AuroraUtil
             'minecraftPort' => 25565,
             'shadowEffects' => 0,
             'cardt' => 'Portfolio',
-            'cardw' => 'https://cxstudios.in/exampleproject',
+            'cardw' => 'https://devnex.pro/resources',
             'card1t' => 'My Project',
-            'card1w' => 'https://cxstudios.in/exampleproject',
+            'card1w' => 'https://devnex.pro/resources',
             'card1v' => 'https://i.imgur.com/nvWYgJY.png',
             'card1h' => 'https://i.imgur.com/9nZfJ0c.png',
             'card2t' => 'My Project',
-            'card2w' => 'https://cxstudios.in/exampleproject',
+            'card2w' => 'https://devnex.pro/resources',
             'card2v' => 'https://i.imgur.com/nvWYgJY.png',
             'card2h' => 'https://i.imgur.com/9nZfJ0c.png',
             'card3t' => 'My Project',
-            'card3w' => 'https://cxstudios.in/exampleproject',
+            'card3w' => 'https://devnex.pro/resources',
             'card3v' => 'https://i.imgur.com/nvWYgJY.png',
             'card3h' => 'https://i.imgur.com/9nZfJ0c.png',
             'card4t' => 'My Project',
-            'card4w' => 'https://cxstudios.in/exampleproject',
+            'card4w' => 'https://devnex.pro/resources',
             'card4v' => 'https://i.imgur.com/nvWYgJY.png',
             'card4h' => 'https://i.imgur.com/9nZfJ0c.png',
             'button1t' => 'Home',
@@ -132,9 +132,9 @@ class AuroraUtil
             'button4t' => 'Members',
             'button4i' => 'fa-solid fa-users',
             'button4l' => '/members',
-            'socialLink1' => 'https://www.youtube.com/@crteam',
-            'socialLink2' => 'https://discord.gg/creativmap',
-            'socialLink3' => 'https://twitter.com/cxstudios1',
+            'socialLink1' => 'https://www.youtube.com/@devnexlabs',
+            'socialLink2' => 'https://discord.gg/devnex',
+            'socialLink3' => 'https://twitter.com/devnexlabs',
             'socialLink4' => 'https://facebook.com/',
             'customCSS' => '',
             'footerAbout' => 'Our community has been around for many years and pride ourselves on offering unbiased, critical discussion among people of all different backgrounds. We are working every day to make sure our community is one of the best.',

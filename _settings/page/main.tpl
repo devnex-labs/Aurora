@@ -10,16 +10,16 @@
 
   <div class="row justify-content-center">
     <div class="btn-group" role="group">
-      <a href="https://cxstudios.in/wiki/aurora-theme/introduction" target="_blank" class="btn btn-info">
+      <a href="https://wiki.devnex.pro/aurora-namelessmc" target="_blank" class="btn btn-info">
         <i class="fas fa-book"></i> <span class="d-none d-md-inline">Wiki</span>
       </a>
-      <a href="https://cxstudios.in/discord/" target="_blank" class="btn btn-primary">
+      <a href="https://discord.gg/devnex/" target="_blank" class="btn btn-primary">
         <i class="fab fa-discord"></i> <span class="d-none d-md-inline">Discord</span>
       </a>
-      <a href="https://cxstudios.in/youtube/" target="_blank" class="btn btn-danger">
+      <a href="https://youtube.com/@devnexlabs" target="_blank" class="btn btn-danger">
         <i class="fab fa-youtube"></i> <span class="d-none d-md-inline">YouTube</span>
       </a>
-      <a href="https://cxstudios.in/donate/" target="_blank" class="btn" style="background-color:pink">
+      <a href="https://devnex.pro/donate/" target="_blank" class="btn" style="background-color:pink">
         <i class="fas fa-heart"></i> <span class="d-none d-md-inline">Donate</span>
       </a>
     </div>

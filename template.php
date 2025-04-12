@@ -1,7 +1,7 @@
 <?php
 /*
  *    Aurora Template for NamelessMC
- *    github.com/bijju089/aurora-theme/
+ *    github.com/devnex-labs/Aurora
  *    LICENSE: MIT
  */
 
@@ -25,7 +25,7 @@ class Aurora_Template extends TemplateBase {
             'name' => 'Aurora',
             'version' => 'dev',
             'nl_version' => '2.1.3',
-            'author' => '<a href="https://cxstudios.in/" target="_blank">cxSTUDIOS</a> & <a href="https://github.com/bijju089/aurora-theme/graphs/contributors" target="_blank">Contributors</a>',
+            'author' => '<a href="https://devnex.pro/" target="_blank">DevNex</a> & <a href="https://github.com/bijju089/aurora-theme/graphs/contributors" target="_blank">Contributors</a>',
         ];
 
         $template['path'] = (defined('CONFIG_PATH') ? CONFIG_PATH : '') . '/custom/templates/' . $template['name'] . '/';
