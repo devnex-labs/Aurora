@@ -10,11 +10,11 @@
 
 html,
 body {
-    background: #f3f6fa;
+    background: var(--bg-primary);
 }
 
 body.pushable>.pusher {
-    background: #f3f6fa;
+    background: var(--bg-primary);
     display: flex;
     min-height: 100vh;
     flex-direction: column;
@@ -1086,11 +1086,11 @@ select {
 body.dark,
 body.dark>.pusher,
 body.dark .ui.pointing.dropdown>.menu:after {
-    background: #222;
+    background: var(--bg-primary-dark);
 }
 
 body.dark .ui.secondary.menu:not(.inverted) {
-    background: #303030;
+    background: var(--bg-secondary-dark);
     color: #fff;
 }
 
@@ -1099,26 +1099,28 @@ body.dark .ui.secondary.menu .item.active {
 }
 
 body.dark .ui.top.attached.menu:not(.inverted) {
-    background: #282828;
-    border: 1px solid #282828;
+    background: var(--bg-tertiary-dark);
+    border: 1px solid var(--bg-tertiary-dark);
 }
 
 body.dark .ui.top.attached.menu:not(.inverted) .item {
     color: #fff;
 }
-
+body.dark .ui.input>input {
+    background-color: var(--bg-tertiary-dark) !important;
+}
 body.dark .ui.form input:not(.button) {
-    background-color: #303030 !important;
+    background-color: var(--bg-secondary-dark) !important;
 }
 
 body.dark .ui.modal {
-    background-color: #303030;
+    background-color: var(--bg-secondary-dark);
     border: none;
 }
 
 body.dark .ui.modal>.content {
-    background-color: #303030;
-    border: 1px solid rgba(0, 0, 0, 0.125);
+    background-color: var(--bg-secondary-dark);
+    border: var(--border-primary-dark);
     color: #fff;
     -webkit-box-shadow: none;
     box-shadow: none;
@@ -1128,14 +1130,14 @@ body.dark .ui.modal>.actions,
 body.dark .ui.modal>.header {
     color: rgba(255, 255, 255, 0.6);
     background-color: #444;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+    border-bottom: var(--border-primary-dark);
 }
 
 body.dark .ui.popup,
 body.dark .ui.secondary.menu .ui.popup,
 body.dark .ui.menu .dropdown.item .menu,
 body.dark .ui.dropdown .menu {
-    background-color: #222;
+    background-color: var(--bg-primary-dark);
     border: 1px solid #444;
     color: rgba(255, 255, 255, 0.6);
 }
@@ -1144,7 +1146,7 @@ body.dark .ui.button,
 body.dark .ui.default.button,
 body.dark .ui.mini.icon.button,
 body.dark .ui.top.right.attached.label {
-    background-color: #282828;
+    background-color: var(--bg-tertiary-dark);
     color: rgba(255, 255, 255, 0.6);
 }
 
@@ -1156,26 +1158,26 @@ body.dark .ui.button.red {
 body.dark .ui.image.label,
 body.dark .ui.selection.dropdown,
 body.dark .ui.selection.visible.dropdown>.text:not(.default) {
-    background-color: #282828;
+    background-color: var(--bg-tertiary-dark);
     color: #fff;
 }
 
 body.dark .ui.selection.dropdown .ui.label {
-    background-color: #303030;
+    background-color: var(--bg-secondary-dark);
     color: #fff;
 }
 
 body.dark .ui.form .ui.selection.dropdown input:not(.button) {
-    background-color: #282828 !important;
+    background-color: var(--bg-tertiary-dark) !important;
 }
 
 body.dark .ui.form .field .ui.selection.active.dropdown .menu {
-    border: 1px solid #282828;
+    border: 1px solid var(--bg-tertiary-dark);
 }
 
 body.dark .ui.form .field .ui.dropdown .menu .item {
-    background-color: #282828;
-    border-top: 1px solid #303030;
+    background-color: var(--bg-tertiary-dark);
+    border-top: 1px solid var(--bg-secondary-dark);
     color: #fff;
 }
 
@@ -1183,8 +1185,8 @@ body.dark .ui.card,
 body.dark .ui.segment,
 body.dark .ui.segment.attached:not(.basic),
 body.dark .ui.vertical.menu {
-    background-color: #303030;
-    border: 1px solid rgba(0, 0, 0, 0.125);
+    background-color: var(--bg-secondary-dark);
+    border: var(--border-primary-dark);
     -webkit-box-shadow: none;
     box-shadow: none;
 }
@@ -1198,13 +1200,13 @@ body.dark .ui.attached.tabular.menu {
 }
 
 body.dark .ui.attached.tabular.menu .item.active {
-    background-color: #303030;
+    background-color: var(--bg-secondary-dark);
     border-color: transparent;
 }
 
 body.dark .ui.card .content.header {
     background-color: #444;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+    border-bottom: var(--border-primary-dark);
 }
 
 body.dark .ui.card>.content>.description,
@@ -1276,32 +1278,32 @@ body.dark .ui.link.list.list .active.item a:not(.ui):hover {
 }
 
 body.dark .ui.top.left.popup:before {
-    background: #222;
+    background: var(--bg-primary-dark);
     -webkit-box-shadow: 1px 1px 0 0 #444;
     box-shadow: 1px 1px 0 0 #444;
 }
 
 body.dark .ui.right.center.popup:before {
-    background: #222;
+    background: var(--bg-primary-dark);
     -webkit-box-shadow: -1px 1px 0 0 #444;
     box-shadow: -1px 1px 0 0 #444;
 }
 
 body.dark .ui.left.center.popup:before {
-    background: #222;
+    background: var(--bg-primary-dark);
     -webkit-box-shadow: 1px -1px 0 0 #444;
     box-shadow: 1px -1px 0 0 #444;
 }
 
 body.dark .ui.bottom.left.popup:before {
-    background: #222;
-    -webkit-box-shadow: 1px 1px 0 0 #222;
-    box-shadow: 1px 1px 0 0 #222;
+    background: var(--bg-primary-dark);
+    -webkit-box-shadow: 1px 1px 0 0 var(--bg-primary-dark);
+    box-shadow: 1px 1px 0 0 var(--bg-primary-dark);
 }
 
 body.dark .ui.form textarea {
-    background-color: #303030;
-    border: 2px solid #282828;
+    background-color: var(--bg-secondary-dark);
+    border: 2px solid var(--bg-tertiary-dark);
     color: #fff;
 }
 
@@ -1321,13 +1323,13 @@ body.dark .ui.form input[type=url] {
 }
 
 body.dark .ui.mini.info.message {
-    background-color: #282828;
-    box-shadow: 0 0 0 1px #282828 inset, 0 0 0 0 transparent;
-    -webkit-box-shadow: 0 0 0 1px #282828 inset, 0 0 0 0 transparent;
+    background-color: var(--bg-tertiary-dark);
+    box-shadow: 0 0 0 1px var(--bg-tertiary-dark) inset, 0 0 0 0 transparent;
+    -webkit-box-shadow: 0 0 0 1px var(--bg-tertiary-dark) inset, 0 0 0 0 transparent;
 }
 
 body.dark .ui.pagination {
-    background-color: #303030;
+    background-color: var(--bg-secondary-dark);
 }
 
 body.dark .ui.pagination.menu .item {
@@ -1335,7 +1337,7 @@ body.dark .ui.pagination.menu .item {
 }
 
 body.dark .ui.pagination.menu .item.active {
-    background-color: #282828;
+    background-color: var(--bg-tertiary-dark);
 }
 
 body.dark .ui.pagination .disabled.item {
@@ -1344,18 +1346,18 @@ body.dark .ui.pagination .disabled.item {
 }
 
 body.dark .ui.table {
-    background: #303030;
+    background: var(--bg-secondary-dark);
     color: rgba(255, 255, 255, 0.6);
 }
 
 body.dark .ui.table thead th {
-    background-color: #282828;
+    background-color: var(--bg-tertiary-dark);
     color: rgba(255, 255, 255, 0.6);
 }
 
 body.dark .ui.top.attached.header {
-    background-color: #282828;
-    border-color: #282828;
+    background-color: var(--bg-tertiary-dark);
+    border-color: var(--bg-tertiary-dark);
     color: rgba(255, 255, 255, 0.6);
 }
 
@@ -1381,7 +1383,7 @@ body.dark .forum_post {
 }
 
 body.dark .tox .tox-toolbar {
-    background-color: #222;
+    background-color: var(--bg-primary-dark);
 }
 
 body.dark .tox .tox-tbtn {
@@ -1415,7 +1417,7 @@ body.dark .tox .tox-textarea,
 body.dark .tox .tox-textfield,
 body.dark .tox .tox-toolbar-textfield,
 body.dark .tox .tox-selectfield select {
-    background-color: #222;
+    background-color: var(--bg-primary-dark);
 }
 
 body.dark .tox .tox-dialog-wrap__backdrop {
@@ -1445,7 +1447,7 @@ body.dark .ui.red.cards>.card {
 }
 
 body.dark .ui.tabular.menu {
-    border-color: #282828;
+    border-color: var(--bg-tertiary-dark);
 }
 
 body.dark .ui.tabular.menu .item {
@@ -1453,15 +1455,15 @@ body.dark .ui.tabular.menu .item {
 }
 
 body.dark .ui.tabular.menu .active.item {
-    background-color: #282828;
-    border-color: #282828;
+    background-color: var(--bg-tertiary-dark);
+    border-color: var(--bg-tertiary-dark);
 }
 
 body.dark .cc-window.cc-floating {
     -webkit-box-shadow: 0 1px 3px 0 #444, 0 0 1px 1px #444;
     box-shadow: 0 1px 3px 0 #444, 0 0 1px 1px #444;
-    background-color: #303030 !important;
-    border: 1px solid rgba(0, 0, 0, 0.125);
+    background-color: var(--bg-secondary-dark) !important;
+    border: var(--border-primary-dark);
     color: #fff !important;
 }
 
@@ -1471,7 +1473,7 @@ body.dark .cc-window.cc-floating .cc-link {
 }
 
 body.dark .cc-window.cc-floating .cc-highlight .cc-btn.cc-allow {
-    background-color: #282828;
+    background-color: var(--bg-tertiary-dark);
     border-color: transparent;
 }
 
