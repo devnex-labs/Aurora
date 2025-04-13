@@ -35,7 +35,7 @@
 {else}
         <div class="ui secondary {if $NAVBARTYPE eq '0'} pointing {/if} menu" style="height: 55px;" id="navbar">
             <div class="ui container">
-              {if $NAVBARSTYLE eq '0'}{if isset($LOGO_IMAGE)}<img class="ui small image" style="width:{$LOGOWIDTH}px;"src="{$LOGO_IMAGE}" id="pcnavbar">&nbsp; {else} <h2>{$SITE_NAME} </h2> {/if}{/if}
+              {if $NAVBARSTYLE eq '0'}{if isset($LOGO_IMAGE)}<img class="ui small image" {if $LOGOWIDTH}style="width:{$LOGOWIDTH}px;"{/if} src="{$LOGO_IMAGE}" id="pcnavbar">&nbsp; {else} <h2>{$SITE_NAME} </h2> {/if}{/if}
                 {foreach from=$NAV_LINKS key=name item=item}
                     {if isset($item.items)}
                         <div class="ui dropdown item">
