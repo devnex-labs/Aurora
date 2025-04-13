@@ -1,7 +1,7 @@
 # Aurora NamelessMC Theme
 
 A perfect theme for [NamelessMC](https://namelessmc.com/) <br><br>
-![Aurora](https://img.shields.io/badge/Aurora-FREE-yellow?style=for-the-badge) ![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/devnex-labs/aurora-theme/total?style=for-the-badge) ![GitHub License](https://img.shields.io/github/license/devnex-labs/Aurora?style=for-the-badge) ![GitHub Release](https://img.shields.io/github/v/release/devnex-labs/Aurora?display_name=tag&style=for-the-badge)
+![Aurora](https://img.shields.io/badge/Aurora-FREE-yellow?style=for-the-badge) ![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/devnex-labs/Aurora/total?style=for-the-badge) ![GitHub License](https://img.shields.io/github/license/devnex-labs/Aurora?style=for-the-badge) ![GitHub Release](https://img.shields.io/github/v/release/devnex-labs/Aurora?display_name=tag&style=for-the-badge)
 
 ## Features
 
