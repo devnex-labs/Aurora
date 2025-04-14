@@ -109,7 +109,7 @@ class AuroraUtil
     {
         return [
                 'btnColour' => '#dc3545',
-                'btnEnabled' => 0,
+                'btnEnabled' => 1,
                 'navbarType' => 0,
                 'navbarStyle' => 2,
                 'discordView' => 1,
@@ -153,7 +153,6 @@ class AuroraUtil
                 'socialLink2' => 'https://discord.gg/devnex',
                 'socialLink3' => 'https://twitter.com/devnexlabs',
                 'socialLink4' => 'https://facebook.com/',
-                'customCSS' => '',
                 'footerAbout' => 'Our community has been around for many years and pride ourselves on offering unbiased, critical discussion among people of all different backgrounds. We are working every day to make sure our community is one of the best.',
                 'footerStyle' => 0,
                 'customCSS' => '',
@@ -180,9 +179,16 @@ class AuroraUtil
     public static function ensureAllParamsExist()
     {
         $settings_data = self::getDefaultSettings();
-        
+    
         foreach ($settings_data as $key => $value) {
-            self::updateOrCreateParam($key, $value);
+            $existing = DB::getInstance()->get('aurora', ['name', '=', $key])->first();
+            if (!$existing) {
+                DB::getInstance()->insert('aurora', [
+                    'name' => $key,
+                    'value' => $value
+                ]);
+            }
         }
     }
+    
 }
