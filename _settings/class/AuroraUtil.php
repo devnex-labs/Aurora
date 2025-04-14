@@ -155,8 +155,8 @@ class AuroraUtil
                 'socialLink4' => 'https://facebook.com/',
                 'footerAbout' => 'Our community has been around for many years and pride ourselves on offering unbiased, critical discussion among people of all different backgrounds. We are working every day to make sure our community is one of the best.',
                 'footerStyle' => 0,
-                'customCSS' => '',
-                'customJS' => '',
+                'customCSS' => '/* Aurora Template */',
+                'customJS' => '// Aurora Template',
                 'Keywords' => '',
                 'welcomeSection' => 0,
                 'welcomeHeader' => 'Welcome to Aurora',
@@ -164,7 +164,7 @@ class AuroraUtil
                 'widgetBot' => 0,
                 'serverID' => '299881420891881473',
                 'channelID' => '355719584830980096',
-                'logoHeight' => '',
+                'logoHeight' => '150',
                 'logoWidth' => '40',
                 'preloaderView' => 0,
                 'preloaderText' => 'Loading...',
@@ -172,7 +172,15 @@ class AuroraUtil
                 'preloaderSpeed' => 'normal',
                 'preloaderStyle' => 'normal',
                 'darkMode' => 0,
-                'themeSwitcher' => 1
+                'themeSwitcher' => 1,
+                'bgPrimary' => '#f9fcfb',
+                'bgSecondary' => '#f8fbfa',
+                'bgTertiary' => '#ede9d8',
+                'borderPrimary' => '#212124',
+                'bgPrimaryDark' => '#070709',
+                'bgSecondaryDark' => '#131416',
+                'bgTertiaryDark' => '#282828',
+                'borderPrimaryDark' => '#212124'
         ];
     }
 
@@ -182,7 +190,13 @@ class AuroraUtil
     
         foreach ($settings_data as $key => $value) {
             $existing = DB::getInstance()->get('aurora', ['name', '=', $key])->first();
-            if (!$existing) {
+    
+            if ($existing) {
+                if ($existing->value === null || $existing->value === '') {
+                    DB::getInstance()->update('aurora', $existing->id, ['value' => $value]);
+                }
+            } else {
+                // doesnt exist
                 DB::getInstance()->insert('aurora', [
                     'name' => $key,
                     'value' => $value
@@ -190,5 +204,6 @@ class AuroraUtil
             }
         }
     }
+    
     
 }

@@ -10,6 +10,10 @@
                 href="#v-pills-theme" role="tab" aria-controls="v-pills-theme" aria-selected="false"><i
                     class="fa-solid fa-paint-brush"></i> {$THEME_PAGE}</a>
 
+            <a class="nav-link {if $TPL_NAME_SESSION eq 'colours'}active{/if}" id="v-pills-colours-tab" data-toggle="pill"
+                href="#v-pills-colours" role="tab" aria-controls="v-pills-colours" aria-selected="false"><i
+                     class="fa-solid fa-palette"></i> {$COLOURS_PAGE}</a>
+
             <a class="nav-link {if $TPL_NAME_SESSION eq 'navbar'}active{/if}" id="v-pills-navbar-tab" data-toggle="pill"
                 href="#v-pills-navbar" role="tab" aria-controls="v-pills-navbar" aria-selected="false"><i
                     class="fa-solid fa-compass"></i> {$NAVBAR_PAGE}</a>

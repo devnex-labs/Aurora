@@ -39,6 +39,7 @@ $smarty->assign([
         'NAVIGATION' => AuroraUtil::getLanguage('navigation', 'navigation'),
         'HOME_PAGE' => AuroraUtil::getLanguage('navigation', 'home_page'),
         'THEME_PAGE' => AuroraUtil::getLanguage('navigation', 'theme_page'),
+        'COLOURS_PAGE' => AuroraUtil::getLanguage('navigation', 'colours_page'),
         'NAVBAR_PAGE' => AuroraUtil::getLanguage('navigation', 'navbar_page'),
         'CONNECTIONS_PAGE' => AuroraUtil::getLanguage('navigation', 'connections_page'),
         'ADDONS_PAGE' => AuroraUtil::getLanguage('navigation', 'addons_page'),

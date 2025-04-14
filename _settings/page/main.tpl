@@ -45,6 +45,10 @@
                 role="tabpanel" aria-labelledby="v-pills-theme-tab">
                 {include file="{$TPL_PATH}theme.tpl"}
             </div>
+            <div class="tab-pane fade {if $TPL_NAME_SESSION eq 'colours'}show active{/if}" id="v-pills-colours"
+                role="tabpanel" aria-labelledby="v-pills-colours-tab">
+                {include file="{$TPL_PATH}colours.tpl"}
+            </div>
             <div class="tab-pane fade {if $TPL_NAME_SESSION eq 'navbar'}show active{/if}" id="v-pills-navbar"
                 role="tabpanel" aria-labelledby="v-pills-navbar-tab">
                 {include file="{$TPL_PATH}navbar.tpl"}

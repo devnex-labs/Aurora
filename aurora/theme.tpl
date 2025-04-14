@@ -5,11 +5,11 @@
   --text-secondary: #34a853;
   --text-tertiary: #fbbc05;
 
-  --bg-primary: #ffffff;
-  --bg-secondary: #f1f3f4;
-  --bg-tertiary: #131416;
+  --bg-primary: {$BGPRIMARY};
+  --bg-secondary: {$BGSECONDARY};
+  --bg-tertiary: {$BGTERTIARY};
    
-  --border-primary: #212124;
+  --border-primary: {$BORDERPRIMARY};
 
   --text-primary: #202124;
   --text-secondary: #5f6368;
@@ -19,11 +19,11 @@
   --text-secondary-dark: #34a853;
   --text-tertiary-dark: #fbbc05;
 
-  --bg-primary-dark: #070709;
-  --bg-secondary-dark: #131416;
-  --bg-tertiary-dark: #282828;
+  --bg-primary-dark: {$BGPRIMARYDARK};
+  --bg-secondary-dark: {$BGSECONDARYDARK};
+  --bg-tertiary-dark: {$BGTERTIARYDARK};
    
-  --border-primary-dark: #212124;
+  --border-primary-dark: {$BORDERPRIMARYDARK};
 
   --text-primary-dark: #202124;
   --text-secondary-dark: #5f6368;
