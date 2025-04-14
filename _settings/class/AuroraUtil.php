@@ -93,6 +93,7 @@ class AuroraUtil
 
         $settings_data = [
             'btnColour' => '#dc3545',
+            'btnEnabled' => 0,
             'navbarType' => 0,
             'navbarStyle' => 2,
             'discordView' => 1,

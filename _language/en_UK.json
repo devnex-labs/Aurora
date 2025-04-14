@@ -58,6 +58,7 @@
     "navbar/navbarstyle_label": "Navbar style",
     "navbar/navbartype_label": "Navbar type",
     "navbar/btncolour_label": "Store Button Colour",
+    "navbar/btnenabled_label": "Store Button",
     "navbar/upload_image": "Upload Image",
     "navbar/upload_banner": "Upload Banner",
     "navbar/social_link": "Social Link",

@@ -24,7 +24,7 @@
                     </div>
                 </div>
             {else}
-{if $item.title == 'Store'}
+{if $item.title == 'Store' && $BTNENABLED == 1}
     {if !in_array($item.title, $navbarexcludeexploded)}
         <button class="ui store navbar button" onclick="location.href='{$item.link}'" style="cursor: pointer; color:white;">
             {$item.icon}{$item.title}

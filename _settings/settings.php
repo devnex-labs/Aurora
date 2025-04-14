@@ -116,6 +116,7 @@ $smarty->assign([
         'NAVBARMINIMAL_LABEL' => AuroraUtil::getLanguage('navbar', 'navbarminimal_label'),
         'NAVBARCLEAN_LABEL' => AuroraUtil::getLanguage('navbar', 'navbarclean_label'),
         'BTNCOLOUR_LABEL' => AuroraUtil::getLanguage('navbar', 'btncolour_label'),
+        'BTNENABLED_LABEL' => AuroraUtil::getLanguage('navbar', 'btnenabled_label'),
         'UPLOAD_IMAGE' => AuroraUtil::getLanguage('navbar', 'upload_image'),
         'UPLOAD_BANNER' => AuroraUtil::getLanguage('navbar', 'upload_banner'),
         'SOCIAL_LINK' => AuroraUtil::getLanguage('navbar', 'social_link'),

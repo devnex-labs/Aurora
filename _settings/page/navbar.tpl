@@ -82,6 +82,13 @@
                     <input type="text" class="form-control" id="inputBtnColour" name="btnColour"
                         placeholder="Enter Hex Value" value="{$BTNCOLOUR}">
                 </div>
+                <div class="form-group">
+                <label for="inputBtnEnabled">{$BTNENABLED_LABEL}</label>
+                 <select name="btnEnabled" class="form-control" id="inputBtnEnabled">
+                   <option value="0" {if $BTNENABLED eq '0' } selected{/if}>{$DISABLED}</option>
+                   <option value="1" {if $BTNENABLED eq '1' } selected{/if}>{$ENABLED}</option>
+                 </select>
+              </div>
                {/if}
             <div class="form-group">
                 <input type="hidden" name="token" value="{$TOKEN}">
