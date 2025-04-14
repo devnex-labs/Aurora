@@ -223,6 +223,7 @@ if (!isset($_POST['sel_btn'])) {
 
 if (Session::exists('staff'))
     $success = Session::flash('staff');
+    AuroraUtil::ensureAllParamsExist();
     $TPL_NAME_SESSION = '';
 
 if (Session::exists('sel_btn_session'))

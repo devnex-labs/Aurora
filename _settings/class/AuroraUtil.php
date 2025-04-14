@@ -91,74 +91,7 @@ class AuroraUtil
             // Error
         }
 
-        $settings_data = [
-            'btnColour' => '#dc3545',
-            'btnEnabled' => 0,
-            'navbarType' => 0,
-            'navbarStyle' => 2,
-            'discordView' => 1,
-            'discordID' => 1002478941111599144,
-            'minecraftView' => 1,
-            'minecraftDomain' => 'play.obsidianmc.in',
-            'minecraftIP' => 'play.obsidianmc.in',
-            'minecraftPort' => 25565,
-            'shadowEffects' => 0,
-            'cardt' => 'Portfolio',
-            'cardw' => 'https://devnex.pro/resources',
-            'card1t' => 'My Project',
-            'card1w' => 'https://devnex.pro/resources',
-            'card1v' => 'https://i.imgur.com/nvWYgJY.png',
-            'card1h' => 'https://i.imgur.com/9nZfJ0c.png',
-            'card2t' => 'My Project',
-            'card2w' => 'https://devnex.pro/resources',
-            'card2v' => 'https://i.imgur.com/nvWYgJY.png',
-            'card2h' => 'https://i.imgur.com/9nZfJ0c.png',
-            'card3t' => 'My Project',
-            'card3w' => 'https://devnex.pro/resources',
-            'card3v' => 'https://i.imgur.com/nvWYgJY.png',
-            'card3h' => 'https://i.imgur.com/9nZfJ0c.png',
-            'card4t' => 'My Project',
-            'card4w' => 'https://devnex.pro/resources',
-            'card4v' => 'https://i.imgur.com/nvWYgJY.png',
-            'card4h' => 'https://i.imgur.com/9nZfJ0c.png',
-            'button1t' => 'Home',
-            'button1i' => 'fa-solid fa-house',
-            'button1l' => '/',
-            'button2t' => 'Forum',
-            'button2i' => 'fa-solid fa-comments',
-            'button2l' => '/forum',
-            'button3t' => 'Store',
-            'button3i' => 'fa-solid fa-cart-shopping',
-            'button3l' => '/store',
-            'button4t' => 'Members',
-            'button4i' => 'fa-solid fa-users',
-            'button4l' => '/members',
-            'socialLink1' => 'https://www.youtube.com/@devnexlabs',
-            'socialLink2' => 'https://discord.gg/devnex',
-            'socialLink3' => 'https://twitter.com/devnexlabs',
-            'socialLink4' => 'https://facebook.com/',
-            'customCSS' => '',
-            'footerAbout' => 'Our community has been around for many years and pride ourselves on offering unbiased, critical discussion among people of all different backgrounds. We are working every day to make sure our community is one of the best.',
-            'footerStyle' => 0,
-            'customCSS' => '',
-            'customJS' => '',
-            'Keywords' => '',
-            'welcomeSection' => 0,
-            'welcomeHeader' => 'Welcome to Aurora',
-            'welcomeDescription' => 'To join our community, please authenticate.',
-            'widgetBot' => 0,
-            'serverID' => '299881420891881473',
-            'channelID' => '355719584830980096',
-            'logoHeight' => '',
-            'logoWidth' => '40',
-            'preloaderView' => 0,
-            'preloaderText' => 'Loading...',
-            'preloaderColor' => 'red',
-            'preloaderSpeed' => 'normal',
-            'preloaderStyle' => 'normal',
-            'darkMode' => 0,
-			'themeSwitcher' => 1
-        ];
+        $settings_data = self::getDefaultSettings();
 
         foreach ($settings_data as $key => $value) {
             try {
@@ -169,6 +102,87 @@ class AuroraUtil
             } catch (Exception $e) {
                 // Error
             }
+        }
+    }
+
+    public static function getDefaultSettings()
+    {
+        return [
+                'btnColour' => '#dc3545',
+                'btnEnabled' => 0,
+                'navbarType' => 0,
+                'navbarStyle' => 2,
+                'discordView' => 1,
+                'discordID' => 1002478941111599144,
+                'minecraftView' => 1,
+                'minecraftDomain' => 'play.obsidianmc.in',
+                'minecraftIP' => 'play.obsidianmc.in',
+                'minecraftPort' => 25565,
+                'shadowEffects' => 0,
+                'cardt' => 'Portfolio',
+                'cardw' => 'https://devnex.pro/resources',
+                'card1t' => 'My Project',
+                'card1w' => 'https://devnex.pro/resources',
+                'card1v' => 'https://i.imgur.com/nvWYgJY.png',
+                'card1h' => 'https://i.imgur.com/9nZfJ0c.png',
+                'card2t' => 'My Project',
+                'card2w' => 'https://devnex.pro/resources',
+                'card2v' => 'https://i.imgur.com/nvWYgJY.png',
+                'card2h' => 'https://i.imgur.com/9nZfJ0c.png',
+                'card3t' => 'My Project',
+                'card3w' => 'https://devnex.pro/resources',
+                'card3v' => 'https://i.imgur.com/nvWYgJY.png',
+                'card3h' => 'https://i.imgur.com/9nZfJ0c.png',
+                'card4t' => 'My Project',
+                'card4w' => 'https://devnex.pro/resources',
+                'card4v' => 'https://i.imgur.com/nvWYgJY.png',
+                'card4h' => 'https://i.imgur.com/9nZfJ0c.png',
+                'button1t' => 'Home',
+                'button1i' => 'fa-solid fa-house',
+                'button1l' => '/',
+                'button2t' => 'Forum',
+                'button2i' => 'fa-solid fa-comments',
+                'button2l' => '/forum',
+                'button3t' => 'Store',
+                'button3i' => 'fa-solid fa-cart-shopping',
+                'button3l' => '/store',
+                'button4t' => 'Members',
+                'button4i' => 'fa-solid fa-users',
+                'button4l' => '/members',
+                'socialLink1' => 'https://www.youtube.com/@devnexlabs',
+                'socialLink2' => 'https://discord.gg/devnex',
+                'socialLink3' => 'https://twitter.com/devnexlabs',
+                'socialLink4' => 'https://facebook.com/',
+                'customCSS' => '',
+                'footerAbout' => 'Our community has been around for many years and pride ourselves on offering unbiased, critical discussion among people of all different backgrounds. We are working every day to make sure our community is one of the best.',
+                'footerStyle' => 0,
+                'customCSS' => '',
+                'customJS' => '',
+                'Keywords' => '',
+                'welcomeSection' => 0,
+                'welcomeHeader' => 'Welcome to Aurora',
+                'welcomeDescription' => 'To join our community, please authenticate.',
+                'widgetBot' => 0,
+                'serverID' => '299881420891881473',
+                'channelID' => '355719584830980096',
+                'logoHeight' => '',
+                'logoWidth' => '40',
+                'preloaderView' => 0,
+                'preloaderText' => 'Loading...',
+                'preloaderColor' => 'red',
+                'preloaderSpeed' => 'normal',
+                'preloaderStyle' => 'normal',
+                'darkMode' => 0,
+                'themeSwitcher' => 1
+        ];
+    }
+
+    public static function ensureAllParamsExist()
+    {
+        $settings_data = self::getDefaultSettings();
+        
+        foreach ($settings_data as $key => $value) {
+            self::updateOrCreateParam($key, $value);
         }
     }
 }
