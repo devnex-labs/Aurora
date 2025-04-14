@@ -9,6 +9,7 @@ A perfect theme for [NamelessMC](https://namelessmc.com/) <br><br>
   * 🎨 Default Dark Mode
   * ✨ Card Border Shadow
   * ⭕ Preloader Options
+  * 🖌️ Custom Colors
 * 🧭 Navbar
   * 🖼 Custom Logo in Middle
       * Custom Logo Height
@@ -24,7 +25,8 @@ A perfect theme for [NamelessMC](https://namelessmc.com/) <br><br>
 * 🧩 Addons
   * 🤖 [WidgetBot](https://widgetbot.io)
 
-
+## Official Documentation
+You may refer: https://wiki.devnex.pro/aurora-namelessmc
 ## Getting Started
 
 1. Download latest version of **Aurora** from releases tab on github.
