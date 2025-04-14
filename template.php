@@ -23,7 +23,7 @@ class Aurora_Template extends TemplateBase {
     public function __construct($cache, $smarty, $language, $user, $pages) {
         $template = [
             'name' => 'Aurora',
-            'version' => '1.3',
+            'version' => 'dev',
             'nl_version' => '2.1.4',
             'author' => '<a href="https://devnex.pro/" target="_blank">DevNex</a> & <a href="https://github.com/bijju089/aurora-theme/graphs/contributors" target="_blank">Contributors</a>',
         ];
