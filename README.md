@@ -56,7 +56,7 @@ You may refer: https://wiki.devnex.pro/aurora-namelessmc
 - English UK (100%)
 ### What you'll need
 
-- [NamelessMC](https://namelessmc.com/download/) v2.1.4
+- [NamelessMC](https://namelessmc.com/download/) v2.2.3
   - We always recommend you to use latest version of namelessmc.
 - Latest version of browser (Internet Explorer not supported)
 
