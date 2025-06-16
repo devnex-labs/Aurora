@@ -10,6 +10,7 @@ require_once(ROOT_PATH . '/custom/templates/Aurora/template.php');
 
 // Get Current Version of Aurora
 $currentVersion = $template->getVersion();
+$isDev = ($currentVersion === 'dev');
 
 // ALT: https://api.bijjuxd.me/v1/aurora/get-version
 $versionInfoUrl = "https://api.devnex.pro/v1/aurora/get-version";
@@ -42,6 +43,7 @@ $current_template->getEngine()->addVariables([
     'updateAvailable' => $updateAvailable,
     'updateRequired' => $updateRequired,
     'currentVersion' => $currentVersion,
+    'isDev' => $isDev,
     'latestVersion' => $latestVersion,
     'downloadUrl' => $downloadUrl,
     'updateDescription' => $updateDescription

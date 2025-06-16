@@ -1,6 +1,6 @@
 <!-- Home Page -->
 <div class="card mb-3">
-    <h3 class="card-header mb-3 text-center">Aurora Theme <span class="badge bg-primary aurora-trigger" data-toggle="modal" data-target="#auroraModal" style="color:white;cursor:help;">v{$currentVersion}</span></h3>
+    <h3 class="card-header mb-3 text-center">Aurora Theme <span class="badge bg-primary aurora-trigger" data-toggle="modal" data-target="#auroraModal" style="color:white;cursor:help;">{if $currentVersion && !$isDev}v{$currentVersion}{elseif $isDev}Dev Build{/if}</span></h3>
     <div class="card-body">
         <form action="" method="POST">
             <input type="hidden" name="sel_btn_session" value="home" />
@@ -9,8 +9,14 @@
                  {$REVIEW_INFO}
                  </div>            
             </div>
-
-{if $updateAvailable}
+{if $isDev}
+            <div class="form-group">
+                <div class="alert alert-warning" role="warning">
+                 {$DEV_INFO}
+                 </div>            
+            </div>
+{/if}
+{if $updateAvailable && !$isDev}
 <div class="card shadow mb-4">
                                 <div class="card-header bg-danger py-3 d-flex flex-row align-items-center justify-content-between">
                                     <h6 class="m-0 font-weight-bold text-white"><i class="fa-solid fa-gear"></i>

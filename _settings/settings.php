@@ -69,6 +69,7 @@ $current_template->getEngine()->addVariables([
         'RATE_AURORA' => AuroraUtil::getLanguage('home', 'rate_theme'),
         'RATE_AURORA_DESC' => AuroraUtil::getLanguage('home', 'rate_theme_desc'),
         'RATE_NOW' => AuroraUtil::getLanguage('home', 'rate_now'),
+        'DEV_INFO' => AuroraUtil::getLanguage('home', 'dev_info'),
 
     // Theme Options
         'SHADOWEFFECTS_LABEL' => AuroraUtil::getLanguage('theme', 'shadoweffects_label'),

@@ -107,6 +107,7 @@
     "home/rate_theme": "Love Aurora?",
     "home/rate_theme_desc": "Thanks for using our theme, leave a 5-star positive review on NamelessMC resource page.",
     "home/rate_now": "Rate Aurora",
+    "home/dev_info": "You are currently using the developer version of Aurora. This version is not recommended for production use, as it may contain bugs, unfinished features, or unstable behaviour. Use at your own risk. However we would appreciate contribution.",
     "custom/leave_blank_to_disable": "Leave blank to disable",
     "frontend/click_to_join": "Click to join",
     "frontend/click_to_copy": "Click to copy",
