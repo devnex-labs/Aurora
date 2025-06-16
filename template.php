@@ -24,7 +24,7 @@ class Aurora_Template extends SmartyTemplateBase {
         $template = [
             'name' => 'Aurora',
             'version' => 'dev',
-            'nl_version' => '2.1.4',
+            'nl_version' => '2.2.3',
             'author' => '<a href="https://devnex.pro/" target="_blank">DevNex</a> & <a href="https://github.com/bijju089/aurora-theme/graphs/contributors" target="_blank">Contributors</a>',
         ];
 
