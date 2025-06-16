@@ -13,7 +13,7 @@
       <a href="https://wiki.devnex.pro/aurora-namelessmc" target="_blank" class="btn btn-info">
         <i class="fas fa-book"></i> <span class="d-none d-md-inline">Wiki</span>
       </a>
-      <a href="https://discord.gg/devnex/" target="_blank" class="btn btn-primary">
+      <a href="https://devnex.pro/discord" target="_blank" class="btn btn-primary">
         <i class="fab fa-discord"></i> <span class="d-none d-md-inline">Discord</span>
       </a>
       <a href="https://youtube.com/@devnexlabs" target="_blank" class="btn btn-danger">
