@@ -13,8 +13,8 @@ require_once('updatechecker.php');
 require_once(ROOT_PATH . '/core/templates/backend_init.php');
 
 
-$smarty->assign(AuroraUtil::getSettingsToSmarty());
-$smarty->assign([
+$current_template->getEngine()->addVariables(AuroraUtil::getSettingsToSmarty());
+$current_template->getEngine()->addVariables([
         'TPL_PATH' => ROOT_PATH . '/custom/templates/Aurora/_settings/page/',
         'SETTINGS_TEMPLATE' => ROOT_PATH . '/custom/templates/Aurora/_settings/' . $template_file,
         'SUBMIT' => $language->get('general', 'submit'),
@@ -34,6 +34,11 @@ $smarty->assign([
         'AURORA_OUTDATED' => AuroraUtil::getLanguage('main', 'aurora_outdated'),
         'AURORA_OUTDATED_INFO' => AuroraUtil::getLanguage('main', 'aurora_outdated_info'),
         'DEBUG_LABEL' => AuroraUtil::getLanguage('main', 'debug_label'),
+        'AURORA_VER' => AuroraUtil::getLanguage('frontend', 'template_version', [
+            'version' => $template->getVersion(),
+        ]),
+        'AURORA_AUTHOR' => AuroraUtil::getLanguage('frontend', 'template_author'),
+        'ABOUT' => AuroraUtil::getLanguage('frontend', 'about'),
 
     // Navigation
         'NAVIGATION' => AuroraUtil::getLanguage('navigation', 'navigation'),
@@ -230,23 +235,23 @@ if (Session::exists('staff'))
 if (Session::exists('sel_btn_session'))
     $TPL_NAME_SESSION = Session::flash('sel_btn_session');
 
-$smarty->assign([
+$current_template->getEngine()->addVariables([
     'TPL_NAME_SESSION' => $TPL_NAME_SESSION
 ]);
 
 
 if (isset($success))
-    $smarty->assign([
+    $current_template->getEngine()->addVariables([
         'SUCCESS' => $success,
         'SUCCESS_TITLE' => $language->get('general', 'success')
     ]);
 
 if (isset($errors) && count($errors))
-    $smarty->assign([
+    $current_template->getEngine()->addVariables([
         'ERRORS' => $errors,
         'ERRORS_TITLE' => $language->get('general', 'error')
     ]);
 
-$smarty->assign([
+$current_template->getEngine()->addVariables([
     'TOKEN' => Token::get(),
 ]);

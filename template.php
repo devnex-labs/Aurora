@@ -5,7 +5,7 @@
  *    LICENSE: MIT
  */
 
-class Aurora_Template extends TemplateBase {
+class Aurora_Template extends SmartyTemplateBase {
 
     private array $_template;
 
@@ -20,7 +20,7 @@ class Aurora_Template extends TemplateBase {
     private $_smarty;
     private $_cache;
 
-    public function __construct($cache, $smarty, $language, $user, $pages) {
+    public function __construct(Cache $cache, Language $language, User $user, Pages $pages) {
         $template = [
             'name' => 'Aurora',
             'version' => 'dev',
@@ -30,7 +30,7 @@ class Aurora_Template extends TemplateBase {
 
         $template['path'] = (defined('CONFIG_PATH') ? CONFIG_PATH : '') . '/custom/templates/' . $template['name'] . '/';
 
-        parent::__construct($template['name'], $template['version'], $template['nl_version'], $template['author']);
+        parent::__construct($template['name'], $template['version'], $template['nl_version'], $template['author'], __DIR__);
 
         $this->_settings = ROOT_PATH . '/custom/templates/Aurora/_settings/settings.php';
        
@@ -44,10 +44,10 @@ class Aurora_Template extends TemplateBase {
             AssetTree::FOMANTIC_UI,
         ]);
 
-        $smarty->assign('TEMPLATE', $template);
+        $this->getEngine()->addVariable('TEMPLATE', $template);
 
         // Other variables
-        $smarty->assign('FORUM_SPAM_WARNING_TITLE', $language->get('general', 'warning'));
+        $this->getEngine()->addVariable('FORUM_SPAM_WARNING_TITLE', $language->get('general', 'warning'));
 
         $cache->setCache('template_settings');
 
@@ -59,7 +59,7 @@ class Aurora_Template extends TemplateBase {
         AuroraUtil::initialise();
 
 // Assign Language
-        $smarty->assign([
+        $this->getEngine()->addVariables([
             'CLICK_TO_JOIN' => AuroraUtil::getLanguage('frontend', 'click_to_join'),
             'MEMBERS_ONLINE' => AuroraUtil::getLanguage('frontend', 'members_online'),
             'CLICK_TO_COPY' => AuroraUtil::getLanguage('frontend', 'click_to_copy'),
@@ -67,9 +67,7 @@ class Aurora_Template extends TemplateBase {
             'AURORA_VER' => AuroraUtil::getLanguage('frontend', 'template_version', [
                'version' => '' . $template["version"] . ''
              ]),
-            'AURORA_AUTHOR' => AuroraUtil::getLanguage('frontend', 'template_author', [
-               'author' => '' . $template["author"] . ''
-             ]),
+            'AURORA_AUTHOR' => AuroraUtil::getLanguage('frontend', 'template_author'),
             'PORTAL_THERE_ARE_CURRENTLY' => AuroraUtil::getLanguage('frontend', 'portal_there_are_currently'),
             'PORTAL_PLAYERS_ONLINE' => AuroraUtil::getLanguage('frontend', 'portal_players_online'),
             'ABOUT' => AuroraUtil::getLanguage('frontend', 'about'),
@@ -80,7 +78,18 @@ class Aurora_Template extends TemplateBase {
             'LOGIN' => AuroraUtil::getLanguage('user', 'login')
         ]);
 
+        if (defined('AUTO_LANGUAGE_VALUE')) {
+            $this->getEngine()->addVariable('AUTO_LANGUAGE_VALUE', AUTO_LANGUAGE_VALUE);
+        }
 }
+
+    public function getVersion(): string {
+        return $this->_template['version'];
+    }
+
+    public function getAuthor(): string {
+        return $this->_template['author'];
+    }
 
     public function onPageLoad() {
         $page_load = microtime(true) - PAGE_START_TIME;
@@ -157,5 +166,5 @@ class Aurora_Template extends TemplateBase {
     }
 }
 
-$template = new Aurora_Template($cache, $smarty, $language, $user, $pages);
+$template = new Aurora_Template($cache, $language, $user, $pages);
 $template_pagination = ['div' => 'ui mini pagination menu', 'a' => '{x}item'];
